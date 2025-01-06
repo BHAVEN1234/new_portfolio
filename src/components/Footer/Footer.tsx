@@ -56,8 +56,8 @@ export function Footer() {
       {/* Contact Info Section */}
       <div className="contact-info">
         <h4 className="contact-title">Contact Info</h4>
-        <p className="contact-item">📞 +1 213-810-7483</p>
-        <p className="contact-item">📧 <a href="mailto:hanxi.gu@outlook.com">hanxi.gu@outlook.com</a></p>
+        <p className="contact-item">📞 +1 (213) 681-7437</p>
+        <p className="contact-item">📧 <a href="mailto:saakshij@usc.edu">saakshij@usc.edu</a></p>
         <p className="contact-item">📍 Los Angeles, CA</p>
       </div>
 
