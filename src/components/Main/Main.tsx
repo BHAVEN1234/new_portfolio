@@ -1,10 +1,15 @@
-import Particles from "react-tsparticles"
+import React from "react";
+import Particles from "react-tsparticles";
 import { Container } from "./styles";
 import { Hero } from "../Hero/Hero";
 import { About } from "../About/About";
-//import { Skills} from "../Skills/Skills"
+import { Skills } from "../Skills/Skills";
+import { Education } from "../Education/education";
 import { Contact } from "../Contact/Contact";
 import { Project } from "../Project/Project";
+import { Experience } from "../Experience/Experience"
+import { Research } from "../Research/Research";
+import { Mystory } from "../Mystory/Mystory";
 import wordpress from "../../assets/wordpress.svg";
 import shopify from "../../assets/shopify.svg";
 import htmlIcon from "../../assets/html-icon.svg";
@@ -16,6 +21,7 @@ import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
+
 
 export function Main() {
   return (
@@ -258,7 +264,12 @@ export function Main() {
       />
       <Hero></Hero>
       <About></About>
+      <Skills></Skills>
+      <Education></Education>
       <Project></Project>
+      <Experience></Experience>
+      <Research></Research>
+      <Mystory></Mystory>
       <Contact></Contact>
     </Container>
   );

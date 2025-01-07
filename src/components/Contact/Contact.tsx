@@ -1,29 +1,33 @@
 import { Container } from "./styles";
 import emailIcon from "../../assets/email-icon.svg";
-import phoneIcon from "../../assets/phone-icon.svg"
-import { Form } from "../Form/Form";
+import phoneIcon from "../../assets/phone-icon.svg";
 
-
-export function Contact(){
-
-  return(
+export function Contact() {
+  return (
     <Container id="contact">
+      {/* Contact Header Section */}
       <header>
-        <h2>Contact</h2>
-        <p>Ready to get started on your project? </p>
-        <p>Contact me now for a Free consultation.</p>
+        <h2>Get In Touch</h2>
       </header>
+
+      {/* Contact Details Section */}
       <div className="contacts">
+        {/* Email Section */}
         <div>
-        <a href="mailto:Hello@vinayaksingh.com"><img src={emailIcon} alt="Email" /></a> 
-          <a href="mailto:Hello@vinayaksingh.com">Hello@vinayaksingh.com</a>
+          <a href="mailto:saakshij@usc.edu">
+            <img src={emailIcon} alt="Email" />
+          </a>
+          <a href="mailto:saakshij@usc.edu">saakshij@usc.edu</a>
         </div>
+
+        {/* Phone Section */}
         <div>
-        <a href="tel:+919630576848"><img src={phoneIcon} alt="Phone No" /></a>
-          <a href="tel:+919630576848">(+91) 9630576848</a>
-        </div>  
+          <a href="tel:+12136817437">
+            <img src={phoneIcon} alt="Phone No" />
+          </a>
+          <a href="tel:+12136817437">(+1) 213-681-7437</a>
+        </div>
       </div>
-      <Form></Form>
     </Container>
-  )
+  );
 }

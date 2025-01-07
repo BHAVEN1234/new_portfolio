@@ -8,9 +8,6 @@ import telegram from '../../assets/telegram.svg';
 export function Footer() {
   return (
     <Container className="footer">
-      <a href="https://vinayaksingh.in" className="logo">
-        {/* Optional: Add a logo or text */}
-      </a>
 
       <div className="portfolio-container">
         <div className="portfolio-intro">
@@ -39,7 +36,7 @@ export function Footer() {
             <a href="#education">Education</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#project">Projects</a>
           </li>
           <li>
             <a href="#experience">Experience</a>

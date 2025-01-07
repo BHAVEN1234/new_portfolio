@@ -5,10 +5,10 @@ import externalLink from "../../assets/external-link.svg"
 import ScrollAnimation from "react-animate-on-scroll";
 
 
-export function Project() {
+export function Research() {
   return (
-    <Container id="project">
-      <h2>My Projects</h2>
+    <Container id="research">
+      <h2>My Research</h2>
       <div className="projects">
 
         <ScrollAnimation animateIn="flipInX">
@@ -57,7 +57,7 @@ export function Project() {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="flipInX">
+        {/* <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#6CB4EE" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
@@ -87,7 +87,7 @@ export function Project() {
               </ul>
             </footer>
           </div>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
 
         {/* <ScrollAnimation animateIn="flipInX">
           <div className="project">

@@ -18,15 +18,19 @@ export function Hero() {
           <p>Hey<img src={Hello} alt="Hello" width="20px" />, I'm</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-            <h1 style={{ color: 'orange', fontFamily: 'Arial, sans-serif' }}>Saakshi Dedhia</h1>
+            <h1 style={{ color: '#FFA500', fontFamily: 'verdana, sans-serif' }}>Saakshi Dedhia</h1>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-  <h2 style={{ color: 'rgb(108,180,238)', fontFamily: 'Arial, sans-serif' }}>
+  <h2 style={{ color: 'rgb(108,180,238)', fontFamily: 'verdana, sans-serif' }}>
     <TextLoop interval={1000}>
-      <span>Financial Analyst</span>
-      <span>Data Analyst</span>
-      <span>Economic Consultant</span>
-      <span>Risk Analyst</span>
+      <span>Financial Planning & Analysis</span>
+      <span>Investment Management</span>
+      <span>Credit Risk Analysis</span>
+      <span>Data Science</span>
+      <span>Analytics</span>
+      <span>Economic Consulting</span>
+      <span>Research</span>
+      <span>Risk Management</span>
     </TextLoop>
   </h2>
 </ScrollAnimation>
