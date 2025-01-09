@@ -49,6 +49,31 @@ export function About() {
       <span>Open to work</span>
     </p>
   </div>
+  <div style={{ marginTop: '3rem' }}>
+  {/* Bigger Rectangular Button with Slightly Rounded Corners */}
+  <a
+    href={Resume}  // Assuming 'Resume' is the path to your resume file
+    download
+    style={{
+      padding: '1.5rem 4rem',  // Larger padding for a bigger button
+      backgroundColor: '#6CB4EE',  // Orange color for the button
+      color: '#fff',  // White text color
+      fontSize: '1.6rem',  // Slightly larger font size
+      fontWeight: 'bold',  // Bold text
+      borderRadius: '10px',  // Slightly rounded corners (10px for subtle effect)
+      textDecoration: 'none',  // Remove underline from the link
+      transition: 'background-color 0.3s ease',  // Smooth transition for background color on hover
+      marginLeft: '1rem',  // Align to the left of the parent element
+      display: 'inline-block',  // Make the link behave like a block element
+      boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',  // Optional shadow for depth
+    }}
+  >
+    RESUME
+  </a>
+</div>
+
+
+
 </ScrollAnimation>
         <div className="hard-skills">
           {/* Add skill icons */}
@@ -104,27 +129,6 @@ export function About() {
           </div>
         </div>
       {/* Download Resume Button */}
-<div style={{ marginTop: '3rem' }}>
-  <a
-    href={Resume}
-    download
-    style={{
-      padding: '1rem 3rem',  // Adjusted padding for a larger button
-      backgroundColor: '#FFA500',  // Orange color
-      color: '#fff',
-      fontSize: '1.4rem',  // Slightly larger text size
-      fontWeight: 'bold',
-      borderRadius: '30px',  // More rounded corners
-      textDecoration: 'none',
-      transition: 'background-color 0.3s ease',
-      marginLeft: '1rem',  // Align to the left
-      display: 'inline-block',  // Make the link behave like a block element
-      boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',  // Optional: Add shadow for some depth
-    }}
-  >
-    RESUME
-  </a>
-</div>
 
       </div>
 

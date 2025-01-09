@@ -21,22 +21,22 @@ export function Hero() {
           <h1 className="name-text">Saakshi Dedhia</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.3 * 1000}>
-          <p className="i-am-into">I am into</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h2 className="dynamic-text">
-            <TextLoop interval={1000}>
-              <span>Financial Planning & Analysis</span>
-              <span>Investment Management</span>
-              <span>Credit Risk Analysis</span>
-              <span>Data Science</span>
-              <span>Analytics</span>
-              <span>Economic Consulting</span>
-              <span>Research</span>
-              <span>Risk Management</span>
-            </TextLoop>
-          </h2>
-        </ScrollAnimation>
+  <p className="i-am-into">
+    I am into
+    <h2 className="dynamic-text">
+      <TextLoop interval={1000}>
+        <span>Financial Planning & Analysis</span>
+        <span>Investment Management</span>
+        <span>Credit Risk Analysis</span>
+        <span>Data Science</span>
+        <span>Analytics</span>
+        <span>Economic Consulting</span>
+        <span>Research</span>
+        <span>Risk Management</span>
+      </TextLoop>
+    </h2>
+  </p>
+</ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
           <p className="small-resume">I’m a problem-solver at heart, blending my passion for data, finance, and economics with hands-on experiences that drive meaningful change. Whether launching a startup or diving into economic research, I thrive on turning complex challenges into impactful solutions while continuously learning and growing along the way.</p>
         </ScrollAnimation>

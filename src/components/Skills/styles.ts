@@ -2,23 +2,11 @@ import styled, { keyframes } from "styled-components";
 
 // Continuous scrolling animation (left to right)
 const scrollAnimation = keyframes`
-  100% {
-    transform: translateX(-100%); /* Start off-screen on the left */
-  }
   0% {
-    transform: translateX(0); /* End fully visible */
-  }
-`;
-
-// Fade-in animation for individual skill items
-const fadeIn = keyframes`
-  0% {
-    opacity: 0; /* Start as hidden */
-    transform: translateY(20px); /* Start slightly lower */
+    transform: translateX(0); /* Start from the first skill */
   }
   100% {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Move to normal position */
+    transform: translateX(-100%); /* Move to the left, until the last skill reaches the end */
   }
 `;
 
@@ -43,8 +31,9 @@ export const SkillsContainer = styled.div`
 
   .skills-scroll {
     display: flex;
-    gap: 3rem; /* Add more spacing between skill items */
+    gap: 3rem; /* Add spacing between skill items */
     animation: ${scrollAnimation} 30s linear infinite; /* Continuous smooth scrolling */
+    width: max-content; /* Ensure the content width is dynamic and doesn't force an unwanted scroll */
   }
 
   .skill-item {
@@ -52,43 +41,41 @@ export const SkillsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 140px; /* Larger box size */
-    height: 140px; /* Larger box size */
+    width: 140px; /* Box size */
+    height: 140px;
     flex-shrink: 0; /* Prevent items from shrinking */
     background: rgba(255, 255, 255, 0.1); /* Light semi-transparent box background */
     border-radius: 10px; /* Rounded corners */
     padding: 1rem; /* Padding inside the box */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
-    opacity: 0; /* Initially hidden */
-    animation: ${fadeIn} 1s ease-in-out forwards; /* Apply fade-in animation */
-
-    /* Add staggered delays for fade-in animation */
-    &:nth-child(1) {
-      animation-delay: 0.5s;
-    }
-    &:nth-child(2) {
-      animation-delay: 1s;
-    }
-    &:nth-child(3) {
-      animation-delay: 1.5s;
-    }
-    &:nth-child(4) {
-      animation-delay: 2s;
-    }
-    &:nth-child(5) {
-      animation-delay: 2.5s;
-    }
+    opacity: 1; /* Visible */
 
     .skill-icon {
-      width: 70px; /* Larger icon size */
-      height: 70px; /* Larger icon size */
+      width: 70px; /* Icon size */
+      height: 70px;
       margin-bottom: 0.5rem; /* Space between icon and text */
     }
 
     p {
-      font-size: 1.75rem; /* Larger text size */
+      font-size: 1.75rem; /* Text size */
       color: #FFFFFF; /* Text color */
       text-align: center; /* Center-align text */
     }
   }
+
+  /* Duplicate the skill items to allow a seamless scroll */
+  .skills-scroll > .skill-item {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 140px;
+    height: 140px;
+  }
+
+  .skills-scroll::before {
+    content: '';
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    animation: none; /* Disable the animation */
+  }
 `;
+

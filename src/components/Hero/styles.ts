@@ -6,6 +6,18 @@ export const Container = styled.section`
   justify-content: space-between;
   gap: 8rem;
   background: rgba(0, 0, 0, 0);
+.hey-text {
+  font-size: 3.5rem; /* Adjust font size to make it larger */
+  font-weight: bold; /* Make it bold for better visibility */
+  margin-bottom: 1rem; /* Add some margin below for spacing */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between text and image */
+}
+
+.hey-text img {
+  width: 35px; /* Slightly increase the image size */
+}
 
   .hero-text {
     max-width: 50%; /* Ensures proper alignment */
@@ -28,27 +40,47 @@ export const Container = styled.section`
       margin-bottom: 5rem;
     }
 
-    .button {
-      margin-top: 5rem;
-      padding: 1.4rem 6rem;
-      background-color: #ffa500;
-      color: #fff;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: all 0.3s ease;
+.button {
+  margin-top: 5rem;
+  padding: 1.4rem 6rem; /* Ensure enough padding for readability */
+  background-color: #6CB4EE; /* Button background color */
+  color: #fff; /* Text color */
+  font-size: 1.8rem; /* Increase font size for better readability */
+  font-weight: 600; /* Slightly bold font */
+  letter-spacing: 0.1rem; /* Adds spacing between letters */
+  text-align: center; /* Ensure text is centered */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Optional shadow for contrast */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease;
 
-      &:hover {
-        background-color: #e69500;
-        color: #000;
-      }
-    }
+  &:hover {
+    background-color: #5ba3d8; /* Slightly darker hover color */
+    color: #000; /* Change text color on hover */
+    text-shadow: none; /* Remove shadow on hover for simplicity */
+  }
+}
   }
 
   /* Dynamic text - RGB(108,180,238) color */
-  .dynamic-text {
-    color: rgb(108, 180, 238); /* Set the color to rgb(108,180,238) */
-    font-size: 3rem; /* Adjust font size as per your needs */
-  }
+  .i-am-into {
+  display: inline; /* Make it inline */
+  font-size: 3rem; /* Match the size with .dynamic-text */
+  margin-right: 1rem; /* Add some spacing between "I am into" and dynamic text */
+}
+
+.dynamic-text {
+  display: inline; /* Ensure the dynamic text is on the same line */
+  color: rgb(108, 180, 238); /* Set the color */
+  font-size: 3rem; /* Same font size as .i-am-into */
+  font-weight: bold; /* Optional: Bold for better visibility */
+  animation-delay: 0.3s; /* Delay if needed for smoother transition */
+  margin-left:1rem;
+}
+.small-resume {
+  margin-top: 2rem; /* Adjust the space as needed */
+  font-size:2rem; /* Optional: Adjust font size if necessary */
+  line-height: 1.5; /* Optional: Adjust line height for better readability */
+}
 
   /* Saakshi Dedhiya - Orange color */
   .name-text {
