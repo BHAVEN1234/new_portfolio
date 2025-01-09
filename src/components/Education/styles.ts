@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-// Keyframe for fade-in animation
 const fadeIn = keyframes`
   0% {
     opacity: 0;
@@ -14,65 +13,76 @@ const fadeIn = keyframes`
 
 export const EducationContainer = styled.div`
   text-align: center;
-  margin: 3rem auto;
-  padding: 2rem;
-  max-width: 1200px;
+  margin: clamp(2rem, 4vw, 3rem) auto;
+  padding: clamp(1rem, 2vw, 2rem);
+  max-width: min(90%, 1200px);
   border-radius: 15px;
 
   h2 {
-    font-size: 3.5rem;
-    margin-bottom: 3rem;
-    color: #FFFFFF; /* White text color */
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+    color: #FFFFFF;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: max(1px, 0.15vw);
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
   }
 
   .education-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: clamp(2rem, 4vw, 4rem);
     align-items: center;
+    width: 100%;
   }
 
   .education-item {
     display: flex;
     width: 100%;
-    max-width: 900px;
+    max-width: min(90%, 900px);
     background: #333333;
-    border-radius: 15px;
+    border-radius: clamp(10px, 2vw, 15px);
     overflow: hidden;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-
-    /* Animation for fade-in effect */
     opacity: 0;
     animation: ${fadeIn} 1s forwards;
     animation-delay: 0.3s;
+    flex-direction: row;
+    gap: clamp(1rem, 2vw, 2rem);
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      padding: clamp(1rem, 3vw, 2rem);
+    }
 
     &:hover {
       box-shadow: 0 0 25px rgba(0, 162, 255, 1), 0 0 50px rgba(0, 162, 255, 0.7);
-      transform: scale(1.05);
+      transform: scale(1.02);
       background-color: #444444;
+
+      @media (max-width: 768px) {
+        transform: scale(1.01);
+      }
     }
 
     .education-logo {
       flex-shrink: 0;
-      width: 150px;
-      height: 150px;
+      width: clamp(100px, 20vw, 150px);
+      height: clamp(100px, 20vw, 150px);
       background: #222222;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-      margin: 1rem;
+      margin: clamp(0.5rem, 1vw, 1rem);
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
       &:hover {
         box-shadow: 0 0 25px rgba(0, 162, 255, 0.8);
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
 
       img {
@@ -80,7 +90,6 @@ export const EducationContainer = styled.div`
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
-        transition: transform 0.3s ease;
       }
     }
 
@@ -88,68 +97,68 @@ export const EducationContainer = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 2rem;
+      padding: clamp(1rem, 2vw, 2rem);
+      flex: 1;
+
+      @media (max-width: 768px) {
+        text-align: center;
+        padding: clamp(0.5rem, 1vw, 1rem);
+      }
 
       .education-title {
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 3vw, 2rem);
         font-weight: bold;
         color: #ffffff;
-        margin-bottom: 1rem;
-        letter-spacing: 1px;
+        margin-bottom: clamp(0.5rem, 1vw, 1rem);
+        letter-spacing: max(1px, 0.1vw);
         text-transform: uppercase;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
       }
 
       .education-degree {
-        font-size: 1.8rem;
+        font-size: clamp(1.3rem, 2.5vw, 1.8rem);
         font-weight: 600;
         color: #ffffff;
-        margin-bottom: 1rem;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        margin-bottom: clamp(0.5rem, 1vw, 1rem);
       }
 
       p {
-        font-size: 1.4rem;
+        font-size: clamp(1rem, 2vw, 1.4rem);
         font-weight: 500;
         color: #ffffff;
         line-height: 1.6;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
       }
 
       .education-gpa {
-        font-size: 1.4rem;
+        font-size: clamp(1rem, 2vw, 1.4rem);
         font-weight: 500;
         color: #ffcc00;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-        margin-top: 1rem;
+        margin-top: clamp(0.5rem, 1vw, 1rem);
       }
     }
   }
 
-  .education-quote {
-    // font-style: italic;
+ .education-quote {
   text-align: center;
-  margin: 2rem 0;
-  font-size: 1.6rem; /* Smaller font size for the quote */
-  color: #fff; /* White color for the quote */
+  margin: clamp(1.5rem, 3vw, 2rem) auto;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  color: #fff;
   border-radius: 10px;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: min(90%, 800px);
   line-height: 1.5;
 
-  /* Adding quotation marks before and after the quote */
   &::before {
-    content: "“"; /* Left double quote */
-    font-size: 2.4rem; /* Adjusted size for the quotation mark */
-    color: #f0f0f0; /* Matching color with the quote text */
+    content: '"'; /* Starting quote */
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    color: #f0f0f0;
     margin-right: 0.5rem;
   }
 
   &::after {
-    content: "”"; /* Right double quote */
-    font-size: 2.4rem; /* Adjusted size for the quotation mark */
-    color: #f0f0f0; /* Matching color with the quote text */
+    content: '"'; /* Ending quote and text */
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    color: #f0f0f0;
     margin-left: 0.5rem;
   }
+}
+
 `;
