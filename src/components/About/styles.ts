@@ -6,94 +6,107 @@ export const Container = styled.section`
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 
-  .hard-skills{
+  .hard-skills {
     margin-top: 1.6rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.8rem;
   }
-  .hability{
+
+  .hability {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    img{
+    img {
       width: 3.4rem;
     }
   }
 
-  h2{
+  h2 {
     display: inline-block;
     margin-bottom: 2rem;
-    // border-bottom: 0.2rem solid var(--blue);
-    font-size :3rem;
+    font-size: 3rem;
     margin-top: 0rem;
     color: var(--green);
   }
 
-  h3{
+  h3 {
     margin-top: 2rem;
     color: var(--green);
   }
 
-  p{
+  p {
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
     font-weight: 500;
   }
-  
-  
 
-  .about-image{
+  /* About image styling */
+  .about-image {
     text-align: center;
-   img{
-     margin-top: 2rem;
-     width: 75%;
-     filter: grayscale(0);
-     transition: filter 0.5s;
-     &:hover{
-       filter: grayscale(0);
-     }
-   }
+    position: relative; /* Needed to position the overlay */
+
+    img {
+      margin-top: 2rem;
+      width: 75%;
+      border-radius: 20px; /* Rounded corners */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+      animation: fadeInUp 1s ease-in-out;
+
+      /* Initial image state */
+      &:hover {
+        transform: scale(1.05); /* Slight zoom effect */
+        box-shadow: 0px 0px 15px 5px rgba(108, 180, 238, 0.8);  /* Light blue glowing effect on hover */
+      }
+    }
   }
 
+  /* Animation for fadeInUp */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Media query for mobile responsiveness */
   @media only screen and (max-width: 480px) {
     .about-image {
       max-width: 100%;
       margin-top: 4rem;
-      img{
-        margin-top: 2rem;
+
+      img {
         width: 100%;
-        filter: grayscale(0);
-        transition: filter 0.5s;
-        &:hover{
-          filter: grayscale(0);
-        }
+        border-radius: 20px; /* Rounded corners */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
     }
   }
 
-  @media (max-width: 960px){
+  /* Media query for medium screens */
+  @media (max-width: 960px) {
     display: block;
     text-align: center;
-    
-    .hard-skills{
+
+    .hard-skills {
       justify-content: center;
     }
-    .about-image{
+
+    .about-image {
       display: flex;
       max-width: 100%;
-      img{
-        margin-top: 2rem;
-        width: 100%;
-        filter: grayscale(0);
-        transition: filter 0.5s;
-        &:hover{
-          filter: grayscale(0);
-        }
-    }
-    
-    
-  }
 
-`
+      img {
+        width: 100%;
+        border-radius: 20px; /* Rounded corners */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    }
+  }
+`;

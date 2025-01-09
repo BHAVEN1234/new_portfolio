@@ -4,10 +4,11 @@ import { Container } from "./styles";
 import { Hero } from "../Hero/Hero";
 import { About } from "../About/About";
 import { Skills } from "../Skills/Skills";
+import { Extraskills } from "../Extraskills/Extraskills";
 import { Education } from "../Education/education";
 import { Contact } from "../Contact/Contact";
 import { Project } from "../Project/Project";
-import { Experience } from "../Experience/Experience"
+import { Experience } from "../Experience/Experience";
 import { Research } from "../Research/Research";
 import { Mystory } from "../Mystory/Mystory";
 import wordpress from "../../assets/wordpress.svg";
@@ -265,6 +266,7 @@ export function Main() {
       <Hero></Hero>
       <About></About>
       <Skills></Skills>
+      <Extraskills></Extraskills>
       <Education></Education>
       <Project></Project>
       <Experience></Experience>

@@ -24,9 +24,8 @@ const SkillsHeading = styled.h2`
   width: 100%;
   z-index: 20;
   font-size: 4rem;
-  text-transform: lowercase;
   letter-spacing: 2px;
-  background: transferant;
+  background: transparent; /* Fixed spelling from "transferant" to "transparent" */
 `;
 
 interface SkillCardProps {
@@ -201,7 +200,7 @@ export function Mystory() {
 
   return (
     <SkillsSection ref={sectionRef}>
-      <SkillsHeading>My Skills</SkillsHeading>
+      <SkillsHeading>My Life Beyond the Screen</SkillsHeading>
       {skills.map((skill, index) => (
         <SkillCard 
           key={index} 

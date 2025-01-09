@@ -12,6 +12,7 @@ import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import Resume from "../../assets/Saakshi_Dedhia_Resume.pdf"; // Add your resume file
+import blockchain from "../../assets/blockchain.png"
 
 export function About() {
   return (
@@ -22,50 +23,33 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            As someone passionate about uncovering insights and solving complex problems, I have honed my skills in Financial Analysis, Risk Management, Data Analytics, and Econometrics through both academic rigor and hands-on experiences. A relentless learner and go-getter, I thrive on challenges that push me beyond my limits.
+          I’m a curious and driven graduate student at USC, diving deep into the world of Applied Economics and Econometrics. Over the years, I’ve been fortunate to experience both the challenges and rewards of entrepreneurship, having co-founded Sparsh Skin—a journey that taught me how to turn ideas into action, lead teams, and make data-driven decisions.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
           <p>
-            Currently a graduate student pursuing my Master’s in Applied Economics and Econometrics at USC, I’m someone who thrives at the intersection of finance, entrepreneurship, and making meaningful connections. I’ve always been fascinated by how numbers and strategic decisions shape businesses and economies—and I’m here to dive deeper into that world.
+          Currently, I’m focused on combining my love for economics with a passion for leadership and collaboration. As President of the Economic Graduate Student Association and an active member of multiple USC communities, I’m always looking for ways to inspire and support those around me.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
           <p>
-            In my four years as the co-founder of Sparsh Skin, a personal care startup, I got to flex my entrepreneurial muscles. From leading cross-functional teams and managing finances to overseeing product development, I wore many hats and loved every moment of it. We successfully launched 30+ products, identified 20+ new business opportunities, and grew the brand’s visibility, all while driving sustainable business practices. Through this journey, I became passionate about data-driven decision-making and financial strategy—core elements that I now bring into every project.
+          I’m excited to continue my journey by taking on new opportunities that allow me to grow, contribute, and make a real-world impact in the areas of finance, risk management, and data analysis. Let’s connect and create something meaningful together!
           </p>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-          <p>
-            Currently serving as President of the Economic Graduate Student Association (EGSA), Student Ambassador for Association of Indian Students at USC, active member of Blockchain@USC and USC Global Investment Society, I’m leading initiatives to foster collaboration among students and developing my leadership and management skills further. My focus? To continue blending my love for economics with empowering others—whether through finance, mentorship, or innovative solutions.
-          </p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-          <p>
-            I am a curious, creative, and driven individual who is always seeking new challenges and opportunities to learn and grow. I am actively seeking summer 2025 internship opportunities where I can contribute to solving real-world challenges in Investment Management, Asset Management, Risk Management, and Data Analysis. Let’s connect and collaborate!
-          </p>
-        </ScrollAnimation>
-
         {/* Location and Open to Work Section */}
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
   <div style={{ textAlign: 'left', margin: '2rem 0' }}>
-    <p style={{ fontSize: '1.5rem', marginBottom: '0.5rem', fontWeight: 'bold' }}>
+    <p style={{ fontSize: '2rem', marginBottom: '0.5rem', fontWeight: 'bold' }}>
       <strong style={{ color: '#6CB4EE' }}>📍 Location:</strong>
-      <span style={{ color: '#FFFFFF', fontSize: '1.3rem' }}> Los Angeles</span>
-      <span style={{ color: '#FFFFFF', fontSize: '1.2rem' }}> (Open to relocate)</span>
+      <span style={{ color: '#FFFFFF', fontSize: '1.8rem' }}> Los Angeles</span>
+      <span style={{ color: '#FFFFFF', fontSize: '1.8rem' }}> (Open to relocate)</span>
     </p>
-    <p style={{ fontSize: '1.6rem', fontWeight: 'bold', color: '#6CB4EE', marginTop: '1rem' }}>
+    <p style={{ fontSize: '2rem', fontWeight: 'bold', color: '#6CB4EE', marginTop: '1rem' }}>
       <span style={{ marginRight: '0.5rem' }}>✅</span>
       <span>Open to work</span>
     </p>
   </div>
 </ScrollAnimation>
-
-
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
-          <h3>Here are my main skills:</h3>
-        </ScrollAnimation>
-
         <div className="hard-skills">
           {/* Add skill icons */}
           <div className="hability">
@@ -115,31 +99,33 @@ export function About() {
           </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
-              <img src={jsIcon} alt="JavaScript" />
+              <img src={blockchain} alt="blockchain" />
             </ScrollAnimation>
           </div>
         </div>
-        {/* Download Resume Button */}
-        <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-          <a
-            href={Resume}
-            download
-            style={{
-              padding: '1rem 2rem',
-              backgroundColor: '#6CB4EE',
-              color: '#fff',
-              fontSize: '1.2rem',
-              fontWeight: 'bold',
-              borderRadius: '5px',
-              textDecoration: 'none',
-              transition: 'background-color 0.3s ease',
-            }}
-            // onMouseOver={(e) => e.target.style.backgroundColor = '#4682B4'}
-            // onMouseOut={(e) => e.target.style.backgroundColor = '#6CB4EE'}
-          >
-          RESUME
-          </a>
-        </div>
+      {/* Download Resume Button */}
+<div style={{ marginTop: '3rem' }}>
+  <a
+    href={Resume}
+    download
+    style={{
+      padding: '1rem 3rem',  // Adjusted padding for a larger button
+      backgroundColor: '#FFA500',  // Orange color
+      color: '#fff',
+      fontSize: '1.4rem',  // Slightly larger text size
+      fontWeight: 'bold',
+      borderRadius: '30px',  // More rounded corners
+      textDecoration: 'none',
+      transition: 'background-color 0.3s ease',
+      marginLeft: '1rem',  // Align to the left
+      display: 'inline-block',  // Make the link behave like a block element
+      boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',  // Optional: Add shadow for some depth
+    }}
+  >
+    RESUME
+  </a>
+</div>
+
       </div>
 
       <div className="about-image">

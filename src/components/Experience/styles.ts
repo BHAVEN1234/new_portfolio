@@ -1,25 +1,51 @@
 import styled from "styled-components";
 
 export const ExperienceSection = styled.section`
-  padding: 2rem;
-  background: transparent; /* Fixed the typo 'transferant' to 'transparent' */
+  padding: 3rem; /* Increased padding for better spacing */
+  background: transparent;
   font-family: Arial, sans-serif;
 `;
-
 export const ExperienceHeading = styled.h2`
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem; /* Keep the increased font size */
   color: #f0f0f0;
   font-weight: bold;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem; /* Reduced margin for less space */
   display: flex;
   justify-content: center;
   align-items: center;
 
   .icon {
-    font-size: 1.8rem;
-    margin-right: 0.5rem;
+    font-size: 2.2rem; /* Increased icon size */
+    margin-right: 1rem; /* Increased space between icon and text */
     color: #6cb4ee;
+  }
+`;
+export const Quote = styled.p`
+  // font-style: italic;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.6rem; /* Smaller font size for the quote */
+  color: #fff; /* White color for the quote */
+  border-radius: 10px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+
+  /* Adding quotation marks before and after the quote */
+  &::before {
+    content: "“"; /* Left double quote */
+    font-size: 2.4rem; /* Adjusted size for the quotation mark */
+    color: #f0f0f0; /* Matching color with the quote text */
+    margin-right: 0.5rem;
+  }
+
+  &::after {
+    content: "”"; /* Right double quote */
+    font-size: 2.4rem; /* Adjusted size for the quotation mark */
+    color: #f0f0f0; /* Matching color with the quote text */
+    margin-left: 0.5rem;
   }
 `;
 
@@ -38,17 +64,18 @@ export const Timeline = styled.ul`
     width: 4px;
     background: linear-gradient(180deg, #6cb4ee, #3498db);
     transform: translateX(-50%);
+    z-index: 0; /* Ensure it stays behind the timeline items */
   }
 `;
 
 export const TimelineItem = styled.li`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem; /* Increased margin for better spacing */
   position: relative;
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smoother animation */
+  transform: translateY(30px); /* Increased Y translation for animation */
+  transition: opacity 1s ease-out, transform 1s ease-out;
 
   &.visible {
     opacity: 1;
@@ -56,19 +83,17 @@ export const TimelineItem = styled.li`
   }
 
   &.active {
-    /* Highlight the item when clicked */
     .timeline-content {
-      background-color: rgba(173, 216, 230, 0.4); /* Light blue background */
+      background-color: rgba(173, 216, 230, 0.4);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
     }
 
     .timeline-icon {
-      background: #6cb4ee; /* Light blue icon */
+      background: #6cb4ee;
     }
   }
 
   &:hover {
-    /* Apply a lighter background or shadow when hovering */
     .timeline-content {
       background-color: rgba(255, 255, 255, 0.2);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
@@ -81,13 +106,14 @@ export const TimelineItem = styled.li`
 `;
 
 export const TimelineContent = styled.div`
-  width: 40%;
-  padding: 1.5rem;
+  width: 45%; /* Slightly increased width */
+  padding: 2rem; /* Increased padding */
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   color: #f0f0f0;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  z-index: 1; /* Ensure content appears above the line */
 
   &.left {
     margin-right: auto;
@@ -100,18 +126,18 @@ export const TimelineContent = styled.div`
   }
 
   .company {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Increased company font size */
     font-weight: bold;
     color: #6cb4ee;
   }
 
   .role {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Increased role font size */
     margin: 0.5rem 0;
   }
 
   .date {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Increased date font size */
     font-style: italic;
   }
 
@@ -127,22 +153,23 @@ export const TimelineIcon = styled.div`
   transform: translateX(-50%);
   background: linear-gradient(135deg, #6cb4ee, #4a9fe1);
   color: #fff;
-  width: 60px;
-  height: 60px;
+  width: 80px; /* Increased icon size */
+  height: 80px; /* Increased icon size */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, background 0.3s ease;
+  z-index: 1; /* Ensure icon appears above the line */
 
   .icon {
-    font-size: 1.8rem;
+    font-size: 2.5rem; /* Increased icon size */
   }
 
   &:hover {
-    transform: translateX(-50%) scale(1.2);
-    background: #6cb4ee; /* Apply light blue on hover */
+    transform: translateX(-50%) scale(1.3); /* Increased scale on hover */
+    background: #6cb4ee;
     box-shadow: 0 8px 20px #6cb4ee;
   }
 `;

@@ -6,6 +6,7 @@ import {
   TimelineItem,
   TimelineContent,
   TimelineIcon,
+  Quote, // Import the new styled component for the quote
 } from "./styles";
 
 export function Experience() {
@@ -35,13 +36,14 @@ export function Experience() {
   }, []);
 
   const content = {
-    heading: "Experience",
+    heading: "Professional Milestones",
     icon: "💼",
+    quote: "Driving success through teamwork, resilience, leadership, and analytical expertise", // Add the quote here
     timeline: [
-      { company: "Sparsh Skin", role: "Co-Founder | Full Time", date: "August 2020 – July 2024" },
-      { company: "Saaro Investments", role: "Business Head | Part-Time", date: "April 2018 – July 2024" },
-      { company: "Aarti Industries Limited", role: "Finance Intern | Internship", date: "Oct 2023 - Dec 2023" },
-      { company: "Amit Gopani & Associates", role: "Finance Intern | Internship", date: "April 2023 – May 2023" },
+      { company: "Sparsh Skin", role: "Co-Founder | Full Time", date: "August 2020 – July 2024, Mumbai, India" },
+      { company: "Saaro Investments", role: "Business Head | Part-Time", date: "April 2018 – July 2024, Mumbai, India" },
+      { company: "Aarti Industries Limited", role: "Finance Intern | Internship", date: "Oct 2023 - Dec 2023, Mumbai, India" },
+      { company: "Amit Gopani & Associates", role: "Finance Intern | Internship", date: "April 2023 – May 2023, Mumbai, India" },
     ],
   };
 
@@ -52,8 +54,12 @@ export function Experience() {
   return (
     <ExperienceSection id="experience">
       <ExperienceHeading>
-         <h2>{content.heading}</h2>
+        <h2>{content.heading}</h2>
       </ExperienceHeading>
+      
+      {/* Quote Display */}
+      <Quote>{content.quote}</Quote> {/* Display the quote */}
+
       <Timeline ref={timelineRef}>
         {content.timeline.map((item, index) => (
           <TimelineItem

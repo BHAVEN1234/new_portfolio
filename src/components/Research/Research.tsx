@@ -8,7 +8,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 export function Research() {
   return (
     <Container id="research">
-      <h2>My Research</h2>
+      <h2>Research Journey </h2>
       <div className="projects">
 
         <ScrollAnimation animateIn="flipInX">
@@ -16,17 +16,17 @@ export function Research() {
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#6CB4EE" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
               <div className="project-links">
-                <a href="https://github.com/CodeVinayak/Serverless-Voting-Application" target="_blank" rel="noreferrer">
+                <a href="https://github.com/saakshidedhia/Bitcoin-IC-Memo" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" /></a>
-                <a href="https://vote.vinayaksingh.com" target="_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/1FC4YDQ6nA536ik55jMK9dUQiHSTmfKMk/view?usp=drive_link" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a> </div>
             </header>
             <div className="body">
-              <h3>Serverless Voting Application for Programming Languages</h3>
-              <p> Developed a serverless voting app using React, AWS Lambda, API Gateway, and DynamoDB, enabling users to view programming languages, cast votes, and access details through an interactive UI, leveraging serverless architecture for scalability and cost-efficiency. </p>
+              <h3>Bitcoin IC Memo</h3>
+              <p> This Investment Committee memo evaluates Bitcoin, focusing on its tokenomics, including supply dynamics, mining incentives, and halving cycles. It examines Bitcoin's volatility, adoption trends, and its role in portfolio diversification, while also addressing risks like regulatory challenges. The analysis concludes with a recommendation based on Bitcoin’s potential for high returns, balanced against its risks. </p>
             </div>
-            <footer> <ul className="tech-list"> <li>AWS Lambda</li> <li>API Gateway</li> <li>DynamoDB</li> </ul> </footer>
+            <footer> <ul className="tech-list"> <li>Delphi Digital</li> </ul> </footer>
           </div>
         </ScrollAnimation>
 
@@ -35,29 +35,30 @@ export function Research() {
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#6CB4EE " strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
               <div className="project-links">
-                <a href="https://github.com/CodeVinayak/AI-Chatbot-Assistant" target="_blank" rel="noreferrer">
+                <a href="https://github.com/saakshidedhia/Effect-of-Behavioral-Biases-on-Investor-s-Decision-Making" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" /> </a>
-                <a href="https://ai-chatbot-t8fn.onrender.com" target="_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/1rlRXjTqok3UZdrDEgnYzzftjcDBT62cE/view" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" /></a>
               </div>
             </header>
             <div className="body">
-              <h3>GeniusBot: AI-Powered Assistance with PDF Insight</h3>
+              <h3>Effect of Behavioral Biases on Investor's Decision Making</h3>
               <p>
-                Developed an interactive chatbot application using Streamlit, OpenAI's GPT-3.5-turbo language model, and PyPDF2 for PDF text extraction, enabling users to ask context-based questions on uploaded PDFs and general queries.
+               This study investigates how behavioral biases influence investment decisions among 92 individual investors. It finds that familiarity bias is the most common, with many respondents favoring companies they know, while loss aversion makes them more risk-averse in the face of potential losses. The research highlights that higher financial literacy helps reduce these biases, enabling more informed investment choices. The study suggests that improving financial literacy and advising clients on managing biases can lead to better investment outcomes.
+
               </p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>Streamlit</li>
-                <li>PyPDF2</li>
-                <li>LangChain</li>
+                <li>Excel</li>
+                <li>Python</li>
+                <li>Tableau</li>
               </ul>
             </footer>
           </div>
         </ScrollAnimation>
 
-        {/* <ScrollAnimation animateIn="flipInX">
+        <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#6CB4EE" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
@@ -65,29 +66,29 @@ export function Research() {
                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
               </svg>
               <div className="project-links">
-                <a href="https://github.com/CodeVinayak/Jupyter-Notebook/tree/main/Credit%20Risk%20Analysis" target="\_blank" rel="noreferrer">
+                <a href="https://github.com/saakshidedhia/The-Impact-of-ESG-Scores-on-Corporate-s-Financial-Performance" target="\_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" />
                 </a>
-                <a href="https://github.com/CodeVinayak/Jupyter-Notebook/blob/main/Credit%20Risk%20Analysis/Credit_Risk_Analysis.ipynb" target="\_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/1rnt7EV-bz3qYfq5sFmnKKHS2Ye6vKWkt/view" target="\_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
               </div>
             </header>
             <div className="body">
-              <h3>Credit Risk Analysis Project</h3>
+              <h3>The Impact of ESG Scores on Corporate’s Financial Performance </h3>
               <p>
-                Developed a highly accurate credit risk classification model using XGBoost, achieving 100% precision, recall, and F1-scores for predicting loan defaults.Implemented rigorous data preprocessing, feature engineering, and hyperparameter tuning on imbalanced credit risk data, employing ensemble methods, cross-validation, and model interpretation techniques.
+              This study examines the impact of ESG (Environmental, Social, and Governance) factors on the profitability and enterprise value of 96 Indian public limited firms. Using data from the Sustainalytics database, the research analyzes metrics like profit after tax, return on assets, and enterprise value. Through correlation and regression analysis, the study reveals how ESG factors influence financial performance, highlighting their importance in responsible investment strategies that balance risk management and sustainable returns.
               </p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>XGBoost</li>
-                <li>Pandas</li>
-                <li>Matplotlib</li>
+                <li>R</li>
+                <li>Tableau </li>
+
               </ul>
             </footer>
           </div>
-        </ScrollAnimation> */}
+        </ScrollAnimation>
 
         {/* <ScrollAnimation animateIn="flipInX">
           <div className="project">

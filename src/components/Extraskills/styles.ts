@@ -2,10 +2,10 @@ import styled, { keyframes } from "styled-components";
 
 // Continuous scrolling animation (left to right)
 const scrollAnimation = keyframes`
-  100% {
+  0% {
     transform: translateX(-100%); /* Start off-screen on the left */
   }
-  0% {
+  100% {
     transform: translateX(0); /* End fully visible */
   }
 `;
