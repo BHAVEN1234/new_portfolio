@@ -1,13 +1,4 @@
-import styled, { keyframes } from "styled-components";
-
-const typing = keyframes`
-  from { width: 0 }
-  to { width: 100% }
-`;
-
-const blink = keyframes`
-  50% { border-color: transparent }
-`;
+import styled from "styled-components";
 
 export const Container = styled.section`
   padding-top: 15%;
@@ -55,7 +46,7 @@ export const Container = styled.section`
     .button {
       margin-top: 5rem;
       padding: clamp(1rem, 2vw, 1.4rem) clamp(3rem, 5vw, 6rem);
-      background-color: #6CB4EE;
+      background-color: #6cb4ee;
       color: #fff;
       font-size: clamp(1.4rem, 2vw, 1.8rem);
       font-weight: 600;
@@ -77,13 +68,7 @@ export const Container = styled.section`
     display: inline-block;
     font-size: clamp(1.8rem, 3vw, 3rem);
     margin-right: 1rem;
-    overflow: hidden;
-    border-right: 0.15em solid #6CB4EE;
-    white-space: nowrap;
     letter-spacing: 0.15em;
-    animation: 
-      ${typing} 3.5s steps(40, end),
-      ${blink} 0.75s step-end infinite;
   }
 
   .dynamic-text {
@@ -92,8 +77,7 @@ export const Container = styled.section`
     font-size: clamp(1.8rem, 3vw, 3rem);
     font-weight: bold;
     margin-left: 1rem;
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in-out 3.5s forwards;
+    animation: fadeIn 0.5s ease-in-out forwards;
   }
 
   .small-resume {
@@ -132,7 +116,6 @@ export const Container = styled.section`
     .illustration-image {
       width: 80%;
       position: relative;
-      border-radius: 50%;
       object-fit: cover;
       transition: transform 0.5s ease, box-shadow 0.5s ease;
       box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
@@ -142,37 +125,16 @@ export const Container = styled.section`
         box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4),
           0px 0px 50px rgba(100, 200, 255, 0.6);
       }
-
-      &:hover::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 120%;
-        height: 120%;
-        background: radial-gradient(circle, rgba(0, 123, 255, 0.4), transparent);
-        border-radius: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        animation: ripple 1.5s infinite ease-out;
-        z-index: -1;
-      }
-    }
-  }
-
-  @keyframes ripple {
-    0% {
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 0.8;
-    }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5);
-      opacity: 0;
     }
   }
 
   @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .illustration-image {

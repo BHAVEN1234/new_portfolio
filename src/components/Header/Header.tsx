@@ -90,7 +90,7 @@ export function Header() {
             Research
           </NavHashLink>
           <NavHashLink smooth to="#my-story" onClick={closeMenu}>
-            My Story
+            Mystory
           </NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact

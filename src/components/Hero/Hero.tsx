@@ -25,8 +25,8 @@ export function Hero() {
     I am into
     <h2 className="dynamic-text">
       <TextLoop interval={1000}>
-        <span>Financial Planning & Analysis</span>
-        <span>Investment Management</span>
+        {/* <span>Financial Planning & Analysis</span> */}
+        {/* <span>Investment Management</span> */}
         <span>Credit Risk Analysis</span>
         <span>Data Science</span>
         <span>Analytics</span>
