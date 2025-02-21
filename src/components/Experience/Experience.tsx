@@ -43,7 +43,7 @@ export function Experience() {
       { company: "University of Southern California", role: "Teaching Assistant | Part Time", date: "February 2025 – Present, Los Angeles, California" },
       { company: "USC Marshall School of Business", role: "Research Writing, Communications and Digital Content Analyst | Part Time", date: " January 2025 – Present, Los Angeles, California" },
       { company: "Sparsh Skin", role: "Co-Founder | Full Time", date: "August 2020 – July 2024, Mumbai, India" },
-      { company: "Saaro Investments", role: "Investment Analyst Inter | Part-Time", date: "April 2018 – July 2024, Mumbai, India" },
+      { company: "Saaro Investments", role: "Investment Analyst Intern | Part-Time", date: "April 2018 – July 2024, Mumbai, India" },
       { company: "Aarti Industries Limited", role: " Financial Planning and Analysis Intern | Internship", date: "Oct 2023 - Dec 2023, Mumbai, India" },
       { company: "Amit Gopani & Associates", role: "Financial Analyst (Finance) Intern | Internship", date: "April 2023 – May 2023, Mumbai, India" },
     ],

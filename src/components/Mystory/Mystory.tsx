@@ -5,19 +5,16 @@ import Card2 from "../../assets/Card2.jpg";
 import cameraIcon from "../../assets/Camera.svg";
 import paletteIcon from "../../assets/Palette.svg";
 import linkedInIcon from "../../assets/linkedin.svg";
-// Import your images
-import postImage1 from "../../assets/post1.jpg"; // Example: Import your post images
-import postImage2 from "../../assets/post2.jpg"; // Example: Import your post images
+import postImage1 from "../../assets/post1.jpg";
+import postImage2 from "../../assets/post2.jpg";
 
-// Assumed height of your website's header
 const HEADER_HEIGHT = '60px';
 
 const SkillsSection = styled.section`
-  position: relative; /* Remove fixed height */
+  position: relative;
   padding-top: calc(${HEADER_HEIGHT} + 20px);
   box-sizing: border-box;
-  /* height: auto; This height will now be determined by content*/
-  min-height: 300vh; /* Or any reasonable value to ensure initial height */
+  min-height: 300vh;
 `;
 
 const SkillsHeading = styled.h2`
@@ -46,8 +43,7 @@ const SkillCard = styled.div<SkillCardProps>`
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 100vh;  This is likely the problem */
-  min-height: 100vh; /* Ensure at least full viewport height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -117,31 +113,32 @@ const SkillDescription = styled.p`
 
 const ImageContainer = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 15px;
   overflow: hidden;
-  height: 600px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 `;
 
-const QuoteAuthor = styled.p`
-  font-size: 1.4rem;
-  font-style: italic;
+const Image = styled.img`
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+`;
+
+const ImageCaption = styled.p`
+  font-size: 1.2rem;
   color: #666;
-  margin-top: 20px;
-  text-align: right;
+  text-align: center;
+  margin-top: 10px;
 `;
 
 const LinkedInContainer = styled.div`
   flex: 1;
   display: flex;
-  flex-direction: row; /* Display posts in a row */
-  justify-content: space-between; /* Distribute posts evenly */
+  flex-direction: row;
+  justify-content: space-between;
   gap: 20px;
 `;
 
@@ -150,8 +147,8 @@ const LinkedInPost = styled.div`
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  width: 48%; /* Adjust width as needed to fit two posts side by side */
-  box-sizing: border-box; /* Make sure padding and border are included in the width */
+  width: 48%;
+  box-sizing: border-box;
 `;
 
 const PostTitle = styled.h3`
@@ -177,33 +174,37 @@ const ReadMore = styled.a`
   }
 `;
 
-// Styles for the post image
 const PostImage = styled.img`
-  width: 100%; /* Make the image fill the container */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Add some spacing between the image and the content */
-  border-radius: 8px; /* Match the post's border radius */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
-  max-height: 200px; /* Limit the maximum height of the image */
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 200px;
+  cursor: pointer;
 `;
 
 const skills = [
   {
-    title: "Chasing sunsets, cultures and stories",
+    title: "A Soul that Roams, A Heart that Listens",
     description: `There's something deeply grounding about being surrounded by nature—standing on a quiet hilltop as the sky melts into shades of gold, feeling the ocean breeze carry away the weight of the world, or watching a river carve its path through time. Traveling, for me, isn't just about seeing new places; it's about feeling them. The rustling of leaves in a dense forest, the crunch of fresh snow underfoot, or the way a star-lit sky makes everything else feel small—it's in these moments that I feel the most alive.
 
 I believe the best way to understand the world is to experience it. From bustling metropolises to quiet coastal towns, every place has a rhythm, a story, a lesson. As Anthony Bourdain once said, "Travel isn't always pretty. It isn't always comfortable. But that's okay. The journey changes you; it should change you." And that's exactly why I do it—not just to see the world, but to let it shape me.`,
     image: Card1,
     icon: cameraIcon,
     color: "#ffffff",
+    caption: "@Captured by Saakshi Dedhia, Joshua Tree National Park",
   },
   {
     title: "My Creative Escape",
-    description: `When words fall short, colors and strokes take over. Painting and drawing have always been my way of making sense of the world—a quiet space where ideas flow without rules. Whether it's the intricate details of a pencil sketch or the fluid unpredictability of watercolor, art lets me capture moments, emotions, and thoughts that can't always be put into words. It's a space where logic takes a backseat, and instinct leads the way. Much like life, my art is ever-evolving. Some days it's messy, experimental, and chaotic—other days, it's precise and intentional. But that's what makes it exciting. As Vincent van Gogh said, "What would life be if we had no courage to attempt anything?" Art is my reminder to embrace imperfection, to try, to create for the sake of creating. And in those moments, I find a different kind of clarity.`,
+    description: `When words fall short, colors and strokes take over. Painting and drawing have always been my way of making sense of the world—a quiet space where ideas flow without rules. Whether it's the intricate details of a pencil sketch or the fluid unpredictability of watercolor, art lets me capture moments, emotions, and thoughts that can't always be put into words. It's a space where logic takes a backseat, and instinct leads the way.
+
+Much like life, my art is ever-evolving. Some days it's messy, experimental, and chaotic—other days, it's precise and intentional. But that's what makes it exciting. As Vincent van Gogh said, "What would life be if we had no courage to attempt anything?" Art is my reminder to embrace imperfection, to try, to create for the sake of creating. And in those moments, I find a different kind of clarity.`,
     image: Card2,
     icon: paletteIcon,
     color: "#ffffff",
     cardColor: "#f0f0f0",
+    caption: "@Painted by Saakshi Dedhia",
   },
   {
     title: "Turning Passion into Purpose",
@@ -212,19 +213,16 @@ I believe the best way to understand the world is to experience it. From bustlin
     color: "#ffffff",
     posts: [
       {
-        title:
-          "Redefining My 20s: A Journey of Entrepreneurship, Hard Work & Gratitude",
-        content:
-          "While most say your 20s are for fun and freedom, I believe it's the best time to give your all. My entrepreneurial journey began in 2020, at just 18, alongside my mom—a decision that reshaped my life. From production and marketing to sales and packaging, I've done it all firsthand, learning the ins and outs of building something from the ground up.\n\nThe long nights and early mornings have been worth it, and being recognized as the 'Rising Star of the Year' at the ISOC Awards 2022 was just the beginning. Grateful for the journey, the lessons, and the people who've supported me along the way.",
+        title: "Redefining My 20s: A Journey of Entrepreneurship, Hard Work & Gratitude",
+        content: "While most say your 20s are for fun and freedom, I believe it's the best time to give your all. My entrepreneurial journey began in 2020, at just 18, alongside my mom—a decision that reshaped my life. From production and marketing to sales and packaging, I've done it all firsthand, learning the ins and outs of building something from the ground up.\n\nThe long nights and early mornings have been worth it, and being recognized as the 'Rising Star of the Year' at the ISOC Awards 2022 was just the beginning. Grateful for the journey, the lessons, and the people who've supported me along the way.",
         link: "https://www.linkedin.com/feed/update/urn:li:activity:7011271612234653696/",
-        image: postImage1, // Add image to the post object
+        image: postImage1,
       },
       {
         title: "Thinking like VC's",
-        content:
-          "On November 22nd, Team Birch took home 1st place at USC's Venture Capital Investment Competition (VCIC)! But more than the win, it was an experience that felt like a real-world crash course in venture capital.\n\nFrom conducting due diligence on real startup founders to crafting an investment thesis and defending our decisions in front of a panel of industry experts, every step was intense, insightful, and incredibly rewarding. Huge shoutout to my amazing teammates for the collaboration and to USC Marshall for organizing such a dynamic competition. This experience has only fueled my passion for venture capital, and I can't wait for what's next!",
+        content: "On November 22nd, Team Birch took home 1st place at USC's Venture Capital Investment Competition (VCIC)! But more than the win, it was an experience that felt like a real-world crash course in venture capital.\n\nFrom conducting due diligence on real startup founders to crafting an investment thesis and defending our decisions in front of a panel of industry experts, every step was intense, insightful, and incredibly rewarding. Huge shoutout to my amazing teammates for the collaboration and to USC Marshall for organizing such a dynamic competition. This experience has only fueled my passion for venture capital, and I can't wait for what's next!",
         link: "https://www.linkedin.com/feed/update/urn:li:activity:7271728122016772096/",
-        image: postImage2, // Add image to the post object
+        image: postImage2,
       },
     ],
   },
@@ -276,7 +274,13 @@ export function Mystory() {
                 <LinkedInContainer>
                   {skill.posts.map((post, idx) => (
                     <LinkedInPost key={idx}>
-                      {post.image && <PostImage src={post.image} alt={post.title} />}
+                      {post.image && (
+                        <PostImage
+                          src={post.image}
+                          alt={post.title}
+                          onClick={() => window.open(post.link, "_blank")}
+                        />
+                      )}
                       <PostTitle>{post.title}</PostTitle>
                       <PostContent>{post.content}</PostContent>
                       <ReadMore
@@ -293,7 +297,8 @@ export function Mystory() {
             </LeftContent>
             {skill.image && (
               <ImageContainer>
-                <img src={skill.image} alt={skill.title} />
+                <Image src={skill.image} alt={skill.title} />
+                {skill.caption && <ImageCaption>{skill.caption}</ImageCaption>}
               </ImageContainer>
             )}
           </SkillContent>

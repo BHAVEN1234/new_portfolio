@@ -15,12 +15,12 @@ export function Project() {
           <div className="project">
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#6CB4EE" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
-              <div className="project-links">
+              {/* <div className="project-links">
                 <a href="https://github.com/CodeVinayak/Serverless-Voting-Application" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" /></a>
                 <a href="https://vote.vinayaksingh.com" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
-                </a> </div>
+                </a> </div> */}
             </header>
             <div className="body">
               <h3>Serverless Voting Application for Programming Languages</h3>
@@ -34,12 +34,12 @@ export function Project() {
           <div className="project">
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#6CB4EE " strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
-              <div className="project-links">
+              {/* <div className="project-links">
                 <a href="https://github.com/CodeVinayak/AI-Chatbot-Assistant" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" /> </a>
                 <a href="https://ai-chatbot-t8fn.onrender.com" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" /></a>
-              </div>
+              </div> */}
             </header>
             <div className="body">
               <h3>GeniusBot: AI-Powered Assistance with PDF Insight</h3>
@@ -64,14 +64,14 @@ export function Project() {
                 <title>Folder</title>
                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
               </svg>
-              <div className="project-links">
+              {/* <div className="project-links">
                 <a href="https://github.com/CodeVinayak/Jupyter-Notebook/tree/main/Credit%20Risk%20Analysis" target="\_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" />
                 </a>
                 <a href="https://github.com/CodeVinayak/Jupyter-Notebook/blob/main/Credit%20Risk%20Analysis/Credit_Risk_Analysis.ipynb" target="\_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
-              </div>
+              </div> */}
             </header>
             <div className="body">
               <h3>Credit Risk Analysis Project</h3>
