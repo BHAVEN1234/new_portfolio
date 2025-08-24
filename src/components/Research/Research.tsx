@@ -26,7 +26,28 @@ export function Research() {
               <h3>Bitcoin IC Memo</h3>
               <p> This Investment Committee memo evaluates Bitcoin, focusing on its tokenomics, including supply dynamics, mining incentives, and halving cycles. It examines Bitcoin's volatility, adoption trends, and its role in portfolio diversification, while also addressing risks like regulatory challenges. The analysis concludes with a recommendation based on Bitcoin’s potential for high returns, balanced against its risks. </p>
             </div>
-            <footer> <ul className="tech-list"> <li>Delphi Digital</li> </ul> </footer>
+            
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#6CB4EE" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
+              <div className="project-links">
+                <a href="https://github.com/saakshidedhia/Bitcoin-IC-Memo" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" /></a>
+                <a href="https://drive.google.com/file/d/1FC4YDQ6nA536ik55jMK9dUQiHSTmfKMk/view?usp=drive_link" target="_blank" rel="noreferrer">
+                  <img src={externalLink} alt="Visit site" />
+                </a> </div>
+            </header>
+            <div className="body">
+              <h3>Green Spaces and Gentrification: How Community Gardens Unintentionally Displace Their</h3>
+              <p> 
+                Used ZIP code-level migration data and Difference-in-Differences modeling to analyze how community gardens in LA and Chicago unintentionally drive gentrification.
+Findings revealed statistically significant racialized in-migration post-greening; accepted for presentation at a International Conference on Empirical Economics (ICEE PSU Altoona) (Aug 2025).
+              </p>
+            </div>
+            
           </div>
         </ScrollAnimation>
 
@@ -48,13 +69,7 @@ export function Research() {
 
               </p>
             </div>
-            <footer>
-              <ul className="tech-list">
-                <li>Excel</li>
-                <li>Python</li>
-                <li>Tableau</li>
-              </ul>
-            </footer>
+           
           </div>
         </ScrollAnimation>
 
@@ -80,13 +95,7 @@ export function Research() {
               This study examines the impact of ESG (Environmental, Social, and Governance) factors on the profitability and enterprise value of 96 Indian public limited firms. Using data from the Sustainalytics database, the research analyzes metrics like profit after tax, return on assets, and enterprise value. Through correlation and regression analysis, the study reveals how ESG factors influence financial performance, highlighting their importance in responsible investment strategies that balance risk management and sustainable returns.
               </p>
             </div>
-            <footer>
-              <ul className="tech-list">
-                <li>R</li>
-                <li>Tableau </li>
-
-              </ul>
-            </footer>
+            
           </div>
         </ScrollAnimation>
 

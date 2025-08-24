@@ -23,11 +23,11 @@ export function Project() {
                 </a> </div> */}
             </header>
             <div className="body">
-              <h3>Serverless Voting Application for Programming Languages</h3>
-              <p> Developed a serverless voting app using React, AWS Lambda, API Gateway, and DynamoDB, enabling users to view programming languages, cast votes, and access details through an interactive UI, leveraging serverless architecture for scalability and cost-efficiency. </p>
+              <h3>Predicting the impact on Stock Market with Current Trade Tariff Announcements</h3>
+              <p> Modeled short-term stock and ETF return directions using FinBERT embeddings, XGBoost, and LASSO on 706 financial news articles and high-frequency trading data.
+Identified latent textual features (e.g., finbert_59) as strong return predictors; achieved 91%+ accuracy for SPY and 90% for XLI using tree-based models. </p>
             </div>
-            <footer> <ul className="tech-list"> <li>AWS Lambda</li> <li>API Gateway</li> <li>DynamoDB</li> </ul> </footer>
-          </div>
+                   </div>
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="flipInX">
@@ -42,18 +42,14 @@ export function Project() {
               </div> */}
             </header>
             <div className="body">
-              <h3>GeniusBot: AI-Powered Assistance with PDF Insight</h3>
+              <h3>AI-Driven Asset Pricing: The Impact of ChatGPT and AI Announcements on Tech Stocks</h3>
               <p>
-                Developed an interactive chatbot application using Streamlit, OpenAI's GPT-3.5-turbo language model, and PyPDF2 for PDF text extraction, enabling users to ask context-based questions on uploaded PDFs and general queries.
+                Modeled the short-term impact of AI-driven sentiment on tech ETF returns using ARIMAX and GARCH, integrating financial and behavioral data.
+Conducted sentiment analysis on ChatGPT-related discussions to create predictive variables, improving return forecasting accuracy (↓RMSE by ~16%).
+
               </p>
             </div>
-            <footer>
-              <ul className="tech-list">
-                <li>Streamlit</li>
-                <li>PyPDF2</li>
-                <li>LangChain</li>
-              </ul>
-            </footer>
+            
           </div>
         </ScrollAnimation>
 
@@ -74,18 +70,13 @@ export function Project() {
               </div> */}
             </header>
             <div className="body">
-              <h3>Credit Risk Analysis Project</h3>
+              <h3>Sovereign Debt Crises: Predicting Defaults and Analyzing their Economic Consequences</h3>
               <p>
-                Developed a highly accurate credit risk classification model using XGBoost, achieving 100% precision, recall, and F1-scores for predicting loan defaults.Implemented rigorous data preprocessing, feature engineering, and hyperparameter tuning on imbalanced credit risk data, employing ensemble methods, cross-validation, and model interpretation techniques.
+                Build predictive models using logistic regression, Random Forest, and Neural Networks to assess sovereign debt default risks, optimizing accuracy with AUC-ROC and precision-recall metrics.
+Identify key macroeconomic and global risk factors driving sovereign defaults in developing economies, uncovering nonlinear patterns through machine learning and statistical modeling.
               </p>
             </div>
-            <footer>
-              <ul className="tech-list">
-                <li>XGBoost</li>
-                <li>Pandas</li>
-                <li>Matplotlib</li>
-              </ul>
-            </footer>
+            
           </div>
         </ScrollAnimation>
 

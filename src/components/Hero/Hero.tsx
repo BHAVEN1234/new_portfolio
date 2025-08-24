@@ -27,12 +27,16 @@ export function Hero() {
       <TextLoop interval={1000}>
         {/* <span>Financial Planning & Analysis</span> */}
         {/* <span>Investment Management</span> */}
-        <span>Credit Risk Analysis</span>
-        <span>Data Science</span>
-        <span>Analytics</span>
-        <span>Economic Consulting</span>
+        <span>Portfolio Management</span>
+        <span>Mergers & Acquisitions</span>
+        <span>Private Equity </span>
+        <span> Venture Capital</span>
+        <span> Investment Analyst</span>
         <span>Research</span>
+        <span>Consulting</span>
         <span>Risk Management</span>
+        <span>Risk Consulting</span>
+        <span> Credit Risk</span>
       </TextLoop>
     </h2>
   </p>

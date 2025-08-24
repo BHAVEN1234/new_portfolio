@@ -187,9 +187,9 @@ const PostImage = styled.img`
 const skills = [
   {
     title: "A Soul that Roams, A Heart that Listens",
-    description: `There's something deeply grounding about being surrounded by nature—standing on a quiet hilltop as the sky melts into shades of gold, feeling the ocean breeze carry away the weight of the world, or watching a river carve its path through time. Traveling, for me, isn't just about seeing new places; it's about feeling them. The rustling of leaves in a dense forest, the crunch of fresh snow underfoot, or the way a star-lit sky makes everything else feel small—it's in these moments that I feel the most alive.
+    description: `There's something deeply grounding about being surrounded by nature standing on a quiet hilltop as the sky melts into shades of gold, feeling the ocean breeze carry away the weight of the world, or watching a river carve its path through time. Traveling, for me, isn't just about seeing new places; it's about feeling them. The rustling of leaves in a dense forest, the crunch of fresh snow underfoot, or the way a starlit sky makes everything else feel small it's in these moments that I feel the most alive.
 
-I believe the best way to understand the world is to experience it. From bustling metropolises to quiet coastal towns, every place has a rhythm, a story, a lesson. As Anthony Bourdain once said, "Travel isn't always pretty. It isn't always comfortable. But that's okay. The journey changes you; it should change you." And that's exactly why I do it—not just to see the world, but to let it shape me.`,
+I believe the best way to understand the world is to experience it. From bustling metropolises to quiet coastal towns, every place has a rhythm, a story, a lesson. As Anthony Bourdain once said, "Travel isn't always pretty. It isn't always comfortable. But that's okay. The journey changes you; it should change you." And that's exactly why I do it not just to see the world, but to let it shape me.`,
     image: Card1,
     icon: cameraIcon,
     color: "#ffffff",
@@ -197,9 +197,9 @@ I believe the best way to understand the world is to experience it. From bustlin
   },
   {
     title: "My Creative Escape",
-    description: `When words fall short, colors and strokes take over. Painting and drawing have always been my way of making sense of the world—a quiet space where ideas flow without rules. Whether it's the intricate details of a pencil sketch or the fluid unpredictability of watercolor, art lets me capture moments, emotions, and thoughts that can't always be put into words. It's a space where logic takes a backseat, and instinct leads the way.
+    description: `When words fall short, colors and strokes take over. Painting and drawing have always been my way of making sense of the world a quiet space where ideas flow without rules. Whether it's the intricate details of a pencil sketch or the fluid unpredictability of watercolor, art lets me capture moments, emotions, and thoughts that can't always be put into words. It's a space where logic takes a backseat, and instinct leads the way.
 
-Much like life, my art is ever-evolving. Some days it's messy, experimental, and chaotic—other days, it's precise and intentional. But that's what makes it exciting. As Vincent van Gogh said, "What would life be if we had no courage to attempt anything?" Art is my reminder to embrace imperfection, to try, to create for the sake of creating. And in those moments, I find a different kind of clarity.`,
+Much like life, my art is ever evolving. Some days it's messy, experimental, and chaotic other days, it's precise and intentional. But that's what makes it exciting. As Vincent van Gogh said, "What would life be if we had no courage to attempt anything?" Art is my reminder to embrace imperfection, to try, to create for the sake of creating. And in those moments, I find a different kind of clarity.`,
     image: Card2,
     icon: paletteIcon,
     color: "#ffffff",

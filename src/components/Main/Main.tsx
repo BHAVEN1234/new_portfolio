@@ -11,6 +11,8 @@ import { Project } from "../Project/Project";
 import { Experience } from "../Experience/Experience";
 import { Research } from "../Research/Research";
 import { Mystory } from "../Mystory/Mystory";
+import { Publications } from "../Publications/Publications"
+import { Memberships }  from "../Memberships/Memberships"
 import wordpress from "../../assets/wordpress.svg";
 import shopify from "../../assets/shopify.svg";
 import htmlIcon from "../../assets/html-icon.svg";
@@ -272,6 +274,8 @@ export function Main() {
       <Experience></Experience>
       <Research></Research>
       <Mystory></Mystory>
+      <Publications></Publications>
+      <Memberships></Memberships>
       <Contact></Contact>
     </Container>
   );

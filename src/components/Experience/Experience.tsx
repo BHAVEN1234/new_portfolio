@@ -40,7 +40,9 @@ export function Experience() {
     icon: "💼",
     quote: "Driving success through teamwork, resilience, leadership, and analytical expertise", // Add the quote here
     timeline: [
-      { company: "University of Southern California", role: "Teaching Assistant | Part Time", date: "February 2025 – Present, Los Angeles, California" },
+      { company: "StepStone Group LP", role: "Portfolio Management and Investment Research Summer Analyst | Full Time", date: "June 2025 2025 – Aug 2025, La Jolla, California" },
+      { company: "University of Southern California, Marshall School of Business", role: "Teaching Assistant (DSO 580 - Project Management) | Part Time", date: "February 2025 – Present, Los Angeles, California" },
+      { company: "University of Southern California, Dornsife School of Letters, Arts and Sciences", role: "Teaching Assistant (POSC 340 - Constitutional Law) | Part Time", date: "February 2025 – May 2025, Los Angeles, California" },
       { company: "USC Marshall School of Business", role: "Research Writing, Communications and Digital Content Analyst | Part Time", date: " January 2025 – Present, Los Angeles, California" },
       { company: "Sparsh Skin", role: "Co-Founder | Full Time", date: "August 2020 – July 2024, Mumbai, India" },
       { company: "Saaro Investments", role: "Investment Analyst Intern | Part-Time", date: "April 2018 – July 2024, Mumbai, India" },

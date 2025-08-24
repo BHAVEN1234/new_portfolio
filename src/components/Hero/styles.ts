@@ -106,27 +106,27 @@ export const Container = styled.section`
       width: clamp(2.5rem, 3vw, 3.5rem);
     }
   }
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-  .hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .illustration-image {
+    width: 80%;
     position: relative;
-
-    .illustration-image {
-      width: 80%;
-      position: relative;
-      object-fit: cover;
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
-      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-
-      &:hover {
-        transform: scale(1.15) perspective(800px) rotateX(10deg) rotateY(-10deg);
-        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4),
-          0px 0px 50px rgba(100, 200, 255, 0.6);
-      }
+    object-fit: cover;
+    transition: filter 0.3s ease;
+    
+    &:hover {
+      filter: 
+        drop-shadow(0 0 10px rgba(100, 200, 255, 0.8))
+        drop-shadow(0 0 20px rgba(100, 200, 255, 0.6))
+        drop-shadow(0 0 30px rgba(100, 200, 255, 0.4));
     }
   }
+}
+
 
   @keyframes fadeIn {
     from {
